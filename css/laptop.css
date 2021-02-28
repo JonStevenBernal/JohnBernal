@@ -1,0 +1,33 @@
+.header__nav {
+  background-image: none;
+}
+.header__nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+.main__section {
+  justify-content: space-between;
+}
+.main__section--container {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+.main__section--hero {
+  width: 50%;
+  background-image: url("../assets/perfil.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-position-y: 90px;
+}
+.main__section2 {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "photo about colaborate";
+}
+.main__section3 {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "services desing suport"
+    ". profile repair";
+}

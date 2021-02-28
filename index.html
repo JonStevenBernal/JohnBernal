@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Bernal</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Poppins:wght@400;600&family=Syncopate&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 630px)" />
+    <link rel="stylesheet" href="./css/laptop.css" media="(min-width: 930px)" />
+  </head>
+  <body>
+    <header x-data="{ open: false }" id="header">
+      <section class="header__section">
+        <a href="index.html"><img src="./assets/logojb.svg" alt="Logo" /></a>
+        <button class="header__button" @click="open = true">
+          <i class="fa fa-bars"></i>
+        </button>
+      </section>
+      <nav
+        x-show.transition.duration.600ms="open"
+        @click.away="open = false"
+        class="header__nav"
+      >
+        <ul>
+          <li class=""><a href="#">Perfil</a></li>
+          <li class=""><a href="#">Sobre mi</a></li>
+          <li class=""><a href="#">Servicios</a></li>
+          <li class=""><a href="#">Portafolio</a></li>
+          <li class=""><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="main__section">
+        <div class="main__section--container">
+          <div class="section__container">
+            <h1>John Bernal</h1>
+            <p class="font-poppins text-lg text-center mt-12 mb-16">
+              <a
+                href=""
+                class="typewrite"
+                data-period="2000"
+                data-type='[ "¡Hola Bienvenidos a todos!", "Soy John Bernal.", "Soy Front-end", "Me gusta maquetar sitios web creativos y con buen diseño." ]'
+              >
+                <span class="wrap"></span>
+              </a>
+            </p>
+            <div class="section__container--buttons">
+              <button>Portafolio</button>
+              <button>Contacto</button>
+            </div>
+            <div class="section__container--social">
+              <a class="text-2xl" href="#"><i class="fa fa-twitter"></i></a>
+              <a class="text-2xl" href="#"><i class="fa fa-linkedin"></i></a>
+              <a class="text-2xl" href="#"><i class="fa fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="main__section--hero"></div>
+      </section>
+      <section class="main__section2">
+        <div class="main__section2--photo">
+          <img src="./assets/perfil2.jpg" alt="" />
+        </div>
+        <div class="main__section2--about">
+          <div class="section2__about">
+            <h3>Sobre mi</h3>
+            <p>
+              Soy Frontend Developer, soy apasionado a la tecnologia y el
+              desarrollo de sofware, me gusta maquetar e implementar buenos
+              diseños que impacten y atraigan a las personas, actualmente vivo
+              en Bogota Colombia.
+            </p>
+          </div>
+        </div>
+        <div class="main__section2--colaborate">
+          <div class="section2__colaborate">
+            <h3>Colaborarnos!</h3>
+            <p>
+              Estoy dispuesto a colaborar. puedo hacer por usted un buen diseño
+              web, portafolios, perfiles, landing pages y muchas otras cosas
+              mas.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="main__section3">
+        <div class="main__section3--services">
+          <div class="section3--services">
+            <h3>Servicios</h3>
+            <p>Aqui estan mis servicios, mis habilidades y mi experiencia.</p>
+          </div>
+        </div>
+        <div class="main__section3--design">
+          <article class="section3--design">
+            <img src="./assets/icons8-web_design.svg" alt="web desing" />
+            <h3>Diseño de paginas Web</h3>
+            <p>
+              Realizamos su pagina web con un buen estilo adaptable para todo
+              tipo de dispositivos.
+            </p>
+          </article>
+        </div>
+        <div class="main__section3--suport">
+          <article class="section3--suport">
+            <img src="./assets/icons8-services.svg" alt="Servicios" />
+            <h3>Soporte Técnico</h3>
+            <p>Analizamos cualquier problema o duda que usted necesite.</p>
+          </article>
+        </div>
+        <div class="main__section3--profile">
+          <article class="section3--profile">
+            <img src="./assets/icons8-profile.svg" alt="Diseño de perfiles" />
+            <h3>Diseño de perfiles</h3>
+            <p>
+              Realizamos perfiles para paginas que permiten insertar codigo.
+            </p>
+          </article>
+        </div>
+        <div class="main__section3--repair">
+          <article class="section3--repair">
+            <img src="./assets/icons8-maintenance.svg" />
+            <h3>Reparacion de equipos</h3>
+            <p>
+              No solo me dedico al Front-end tambien me dedico a reparar su
+              dispositivo movil o de computo.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <script src="./JS/script.js"></script>
+  </body>
+</html>

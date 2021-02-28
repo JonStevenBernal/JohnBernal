@@ -1,0 +1,39 @@
+.main__section2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "photo photo"
+    "about colaborate";
+}
+.main__section2--photo {
+  grid-area: photo;
+}
+.main__section2--about {
+  grid-area: about;
+}
+.main__section2--colaborate {
+  grid-area: colaborate;
+}
+.main__section3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "services services"
+    "desing suport"
+    "profile repair";
+}
+.main__section3--services {
+  grid-area: services;
+}
+.main__section3--desing {
+  grid-area: desing;
+}
+.main__section3--suport {
+  grid-area: suport;
+}
+.main__section3--profile {
+  grid-area: profile;
+}
+.main__section3--repair {
+  grid-area: repair;
+}

@@ -1,0 +1,206 @@
+:root {
+  --primary-color: #131313;
+  --second-color: #000;
+  --third-color: #fff;
+  --fourth-color: #d04b38;
+  --fifth-color: #1f1f1f;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  /* scroll behavior se refiere a una forma animada a la hora de hacer click en eun enlace y este se desplace */
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--primary-color);
+  color: var(--third-color);
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* el width no se va ser mas chico de 320px ya que es la dimencion mas chica en los celulares */
+  min-width: 320px;
+  height: 100px;
+  background-color: rgba(31, 31, 31, 0.8);
+}
+.header__section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.header__section img {
+  width: 50px;
+}
+.header__nav {
+  /* display: none; */
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+  width: 83.333333%;
+  padding: 32px;
+  background-color: var(--second-color);
+  background-image: url("../assets/perfilpng.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+.header__nav ul {
+  list-style: none;
+}
+.header__nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.header__nav ul li a:hover {
+  color: var(--fourth-color);
+}
+.header__button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 0.5px solid gray;
+}
+.header__button i {
+  font-size: 2.5rem;
+  color: gray;
+}
+main {
+  width: 100%;
+}
+.main__section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 700px;
+}
+.main__section--container {
+  margin-top: 280px;
+  width: 100%;
+}
+.section__container {
+  max-width: 320px;
+  margin: 0 auto;
+}
+.main__section--container h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 6rem;
+  text-align: center;
+}
+.main__section--container p {
+  font-size: 1.8rem;
+  margin-top: 20px;
+  margin-bottom: 64px;
+  text-align: center;
+}
+.main__section--container p a {
+  text-decoration: none;
+  color: var(--third-color);
+}
+.section__container--buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.section__container--buttons button {
+  font-size: 1.28rem;
+  font-weight: 600;
+  width: 130px;
+  height: 45px;
+  border: none;
+  border-radius: 33px;
+  padding: 12.5px 35.5px;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+.section__container--buttons button:nth-of-type(2) {
+  background-color: var(--second-color);
+  color: white;
+}
+.section__container--social {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 48px;
+}
+.section__container--social a {
+  color: var(--third-color);
+  font-size: 3rem;
+}
+.main__section2 {
+  margin-top: 50px;
+  min-width: 288px;
+}
+.main__section2--photo,
+.main__section2--about,
+.main__section2--colaborate {
+  display: flex;
+  justify-content: center;
+  max-width: 425px;
+  margin: 0 auto;
+}
+.main__section2--photo img {
+  width: 80%;
+  border-radius: 20px;
+}
+.section2__about,
+.section2__colaborate,
+.section3--services {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.section2__about h3,
+.section2__colaborate h3,
+.section3--services h3 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 24px 0;
+}
+.main__section3 {
+  margin-top: 50px;
+  min-width: 288px;
+}
+
+.section3--design,
+.section3--suport,
+.section3--profile,
+.section3--repair {
+  background-color: var(--fifth-color);
+  border-radius: 20px;
+  width: 90%;
+  height: 220px;
+  min-width: 288px;
+  max-width: 400px;
+  margin: 15px auto;
+  padding: 15px;
+}
+.section3--design img,
+.section3--suport img,
+.section3--profile img,
+.section3--repair img {
+  display: block;
+  width: 80px;
+  margin: 0 auto;
+}
+.section3--services {
+  padding: 15px;
+}
+.section3--services p {
+  text-align: center;
+}
+.section3--services h3,
+.section3--design h3,
+.section3--suport h3,
+.section3--profile h3,
+.section3--repair h3,
+.section3--design p,
+.section3--suport p,
+.section3--profile p,
+.section3--repair p {
+  text-align: center;
+  margin-bottom: 10px;
+}

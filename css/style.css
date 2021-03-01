@@ -107,7 +107,7 @@ main {
   display: flex;
   justify-content: space-around;
 }
-.section__container--buttons button {
+.section__container--buttons a {
   font-size: 1.28rem;
   font-weight: 600;
   width: 130px;
@@ -116,8 +116,11 @@ main {
   border-radius: 33px;
   padding: 12.5px 35.5px;
   box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  background-color: var(--third-color);
+  color: var(--primary-color);
+  text-decoration: none;
 }
-.section__container--buttons button:nth-of-type(2) {
+.section__container--buttons a:nth-of-type(2) {
   background-color: var(--second-color);
   color: white;
 }
@@ -139,6 +142,7 @@ main {
 .main__section2--colaborate {
   display: flex;
   justify-content: center;
+  width: 90%;
   max-width: 425px;
   margin: 0 auto;
 }
@@ -148,19 +152,22 @@ main {
 }
 .section2__about,
 .section2__colaborate,
-.section3--services {
+.section3--services,
+.section4--portafolio,
+.section4--portafolio1 {
   max-width: 375px;
   margin: 0 auto;
-  padding: 0 10px;
 }
 .section2__about h3,
 .section2__colaborate h3,
-.section3--services h3 {
+.section3--services h3,
+.section4--portafolio h3 {
   font-size: 4rem;
   font-weight: 600;
   margin: 24px 0;
 }
-.main__section3 {
+.main__section3,
+.main__section4 {
   margin-top: 50px;
   min-width: 288px;
 }
@@ -186,10 +193,12 @@ main {
   width: 80px;
   margin: 0 auto;
 }
-.section3--services {
+.section3--services,
+.section4--portafolio {
   padding: 15px;
 }
-.section3--services p {
+.section3--services p,
+.section4--portafolio p {
   text-align: center;
 }
 .section3--services h3,
@@ -200,7 +209,47 @@ main {
 .section3--design p,
 .section3--suport p,
 .section3--profile p,
-.section3--repair p {
+.section3--repair p,
+.section4--portafolio h3 {
   text-align: center;
   margin-bottom: 10px;
+}
+.section4--portafolio1__image img {
+  width: 250px;
+  border-radius: 50px;
+}
+.section4--portafolio1 {
+  width: 90%;
+  min-width: 288px;
+  max-width: 400px;
+  margin: 15px auto;
+  padding: 15px;
+}
+.section4--portafolio1 figure {
+  text-align: center;
+}
+.section4--portafolio1__info h3 {
+  font-size: 3rem;
+}
+.portafolio1__info--links {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.portafolio1__info--links a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  text-align: center;
+  color: var(--primary-color);
+  background-color: var(--third-color);
+  border-radius: 30px;
+}
+.portafolio1__info--links a:nth-child(2) {
+  background-color: var(--fifth-color);
+  color: var(--third-color);
+}
+.portafolio1__info--links span i {
+  color: var(--third-color);
 }

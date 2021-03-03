@@ -271,7 +271,8 @@ main {
   font-size: 2rem;
   color: var(--third-color);
 }
-.main__section4--portafolio2 {
+.main__section4--portafolio2,
+.main__section4--portafolio3 {
   margin-top: 40px;
 }
 .footer {

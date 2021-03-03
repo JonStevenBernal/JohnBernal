@@ -36,7 +36,8 @@
   grid-template-columns: 1fr 2fr;
   grid-template-areas:
     "info portafolio1"
-    ". portafolio2";
+    ". portafolio2"
+    ". portafolio3";
 }
 .main__section4--portafolio {
   align-self: center;
@@ -50,4 +51,7 @@
 }
 .section4--portafolio2__image img {
   width: 400px;
+}
+.main__section4--portafolio3 {
+  grid-area: portafolio3;
 }

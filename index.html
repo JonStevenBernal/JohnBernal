@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>John Bernal</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/logojb.svg"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Poppins:wght@400;600&family=Syncopate&display=swap"
@@ -38,11 +44,11 @@
         class="header__nav"
       >
         <ul>
-          <li class=""><a href="#">Perfil</a></li>
-          <li class=""><a href="#">Sobre mi</a></li>
-          <li class=""><a href="#">Servicios</a></li>
-          <li class=""><a href="#">Portafolio</a></li>
-          <li class=""><a href="#">Contacto</a></li>
+          <li class=""><a href="index.html">Perfil</a></li>
+          <li class=""><a href="#sobremi">Sobre mi</a></li>
+          <li class=""><a href="#servicios">Servicios</a></li>
+          <li class=""><a href="#portafolio">Portafolio</a></li>
+          <li class=""><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </header>
@@ -62,19 +68,27 @@
               </a>
             </p>
             <div class="section__container--buttons">
-              <a href="#">Portafolio</a>
-              <a href="#">Contacto</a>
+              <a href="#portafolio">Portafolio</a>
+              <a href="#contacto">Contacto</a>
             </div>
             <div class="section__container--social">
-              <a class="text-2xl" href="#"><i class="fa fa-twitter"></i></a>
-              <a class="text-2xl" href="#"><i class="fa fa-linkedin"></i></a>
-              <a class="text-2xl" href="#"><i class="fa fa-github"></i></a>
+              <a class="text-2xl" href="https://twitter.com/JonStevenBernal"
+                ><i class="fa fa-twitter"></i
+              ></a>
+              <a
+                class="text-2xl"
+                href="https://www.linkedin.com/in/john-steven-bernal-gonzalez-14b390153/"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+              <a class="text-2xl" href="https://github.com/JonStevenBernal"
+                ><i class="fa fa-github"></i
+              ></a>
             </div>
           </div>
         </div>
         <div class="main__section--hero"></div>
       </section>
-      <section class="main__section2">
+      <section id="sobremi" class="main__section2">
         <div class="main__section2--photo">
           <img src="./assets/perfil2.jpg" alt="" />
         </div>
@@ -100,7 +114,7 @@
           </div>
         </div>
       </section>
-      <section class="main__section3">
+      <section id="servicios" class="main__section3">
         <div class="main__section3--services">
           <div class="section3--services">
             <h3>Servicios</h3>
@@ -144,7 +158,7 @@
           </article>
         </div>
       </section>
-      <section class="main__section4">
+      <section id="portafolio" class="main__section4">
         <div class="main__section4--portafolio">
           <div class="section4--portafolio">
             <h3>Portafolio</h3>
@@ -166,8 +180,12 @@
                 tendencias, visibilizando todas las tasas de cambio.
               </p>
               <div class="portafolio1__info--links">
-                <a href="#">Ver Proyecto</a>
-                <a href="#"
+                <a
+                  href="https://jonstevenbernal.github.io/CursoResponsiveDesing-MaquetacionMobileFirst/"
+                  >Ver Proyecto</a
+                >
+                <a
+                  href="https://github.com/JonStevenBernal/CursoResponsiveDesing-MaquetacionMobileFirst"
                   ><span><i class="fa fa-github"></i></span> Ver Codigo</a
                 >
               </div>
@@ -186,8 +204,10 @@
                 parte de un reto donde se aplica HTML y CSS.
               </p>
               <div class="portafolio2__info--links">
-                <a href="#">Ver Proyecto</a>
-                <a href="#"
+                <a href="https://jonstevenbernal.github.io/Landing-page-reto1/"
+                  >Ver Proyecto</a
+                >
+                <a href="https://github.com/JonStevenBernal/Landing-page-reto1"
                   ><span><i class="fa fa-github"></i></span> Ver Codigo</a
                 >
               </div>
@@ -197,14 +217,22 @@
         <div class="main__section4--portafolio3">
           <div class="section4--portafolio3">
             <figure class="section4--portafolio3__image">
-              <img src="./assets/reto1.svg" alt="macbook and iphone" />
+              <img src="./assets/platzivideo.gif" alt="platzi video" />
             </figure>
             <div class="section4--portafolio3__info">
-              <h3>Platzi Blog</h3>
-              <p>Una pagina tecnologia</p>
+              <h3>Platzi Video</h3>
+              <p>
+                Una aplicación para ver videos en línea. Diseñando el home, la
+                pantalla de registro, el login y la pantalla de error de esta
+                aplicación web.
+              </p>
               <div class="portafolio3__info--links">
-                <a href="#">Ver Proyecto</a>
-                <a href="#"
+                <a
+                  href="https://jonstevenbernal.github.io/Curso-de-Frontend-Developer/"
+                  >Ver Proyecto</a
+                >
+                <a
+                  href="https://github.com/JonStevenBernal/Curso-de-Frontend-Developer"
                   ><span><i class="fa fa-github"></i></span> Ver Codigo</a
                 >
               </div>
@@ -213,6 +241,25 @@
         </div>
       </section>
     </main>
+    <footer id="contacto" class="footer">
+      <h3>Encuentrame en</h3>
+      <div class="footer--section">
+        <div class="footer--section--social">
+          <a class="text-2xl" href="https://twitter.com/JonStevenBernal"
+            ><i class="fa fa-twitter"></i> Twitter</a
+          >
+          <a
+            class="text-2xl"
+            href="https://www.linkedin.com/in/john-steven-bernal-gonzalez-14b390153/"
+            ><i class="fa fa-linkedin"></i> Linkedin</a
+          >
+          <a class="text-2xl" href="https://github.com/JonStevenBernal"
+            ><i class="fa fa-github"></i> Github</a
+          >
+        </div>
+      </div>
+      <p>© Copyright John Bernal 2021. Todos los derechos reservados</p>
+    </footer>
     <script src="./JS/script.js"></script>
   </body>
 </html>

@@ -214,34 +214,40 @@ main {
   margin-bottom: 10px;
 }
 .section4--portafolio1__image img,
-.section4--portafolio2__image img {
+.section4--portafolio2__image img,
+.section4--portafolio3__image img {
   width: 300px;
   border-radius: 50px;
 }
 
 .section4--portafolio1 figure,
-.section4--portafolio2 figure {
+.section4--portafolio2 figure,
+.section4--portafolio3 figure {
   text-align: center;
 }
 .section4--portafolio1__info,
-.section4--portafolio2__info {
+.section4--portafolio2__info,
+.section4--portafolio3__info {
   width: 90%;
   max-width: 375px;
   margin: 0 auto;
 }
 .section4--portafolio1__info h3,
-.section4--portafolio2__info h3 {
+.section4--portafolio2__info h3,
+.section4--portafolio3__info h3 {
   font-size: 3rem;
 }
 .portafolio1__info--links,
-.portafolio2__info--links {
+.portafolio2__info--links,
+.portafolio3__info--links {
   height: 100px;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
 }
 .portafolio1__info--links a,
-.portafolio2__info--links a {
+.portafolio2__info--links a,
+.portafolio3__info--links a {
   display: block;
   font-size: 1.28rem;
   font-weight: 600;
@@ -254,15 +260,45 @@ main {
   border: 1px solid var(--third-color);
 }
 .portafolio1__info--links a:nth-child(2),
-.portafolio2__info--links a:nth-child(2) {
+.portafolio2__info--links a:nth-child(2),
+.portafolio3__info--links a:nth-child(2) {
   background-color: var(--second-color);
   color: var(--third-color);
 }
 .portafolio1__info--links span i,
-.portafolio2__info--links span i {
+.portafolio2__info--links span i,
+.portafolio3__info--links span i {
   font-size: 2rem;
   color: var(--third-color);
 }
 .main__section4--portafolio2 {
   margin-top: 40px;
+}
+.footer {
+  width: 90%;
+  max-width: 630px;
+  margin: 0 auto;
+  height: 200px;
+}
+.footer h3 {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.footer--section--social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer--section--social a {
+  text-decoration: none;
+  color: var(--third-color);
+}
+.footer--section--social a i {
+  font-size: 2rem;
+}
+.footer p {
+  margin-top: 20px;
+  text-align: center;
 }

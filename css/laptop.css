@@ -31,3 +31,23 @@
     "services desing suport"
     ". profile repair";
 }
+.main__section4 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    "info portafolio1"
+    ". portafolio2";
+}
+.main__section4--portafolio {
+  align-self: center;
+  grid-area: info;
+}
+.main__section4--portafolio1 {
+  grid-area: portafolio1;
+}
+.main__section4--portafolio2 {
+  grid-area: portafolio2;
+}
+.section4--portafolio2__image img {
+  width: 400px;
+}

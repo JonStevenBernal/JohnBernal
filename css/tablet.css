@@ -37,3 +37,22 @@
 .main__section3--repair {
   grid-area: repair;
 }
+.section4--portafolio1,
+.section4--portafolio2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "info batatagif";
+}
+.section4--portafolio1__info,
+.section4--portafolio2__info {
+  grid-area: info;
+  align-self: center;
+  max-width: 320px;
+  margin: 0 auto;
+}
+.section4--portafolio2__image {
+  align-self: center;
+}
+.section4--portafolio2__image img {
+  width: 400px;
+}

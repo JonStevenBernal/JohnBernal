@@ -139,7 +139,7 @@ main {
 }
 .main__section2--photo {
   height: 400px;
-  background-image: url("/assets/perfil2.jpg");
+  background-image: url("../assets/perfil2.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

@@ -137,6 +137,13 @@ main {
   margin-top: 50px;
   min-width: 288px;
 }
+.main__section2--photo {
+  height: 400px;
+  background-image: url("/assets/perfil2.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
 .main__section2--photo,
 .main__section2--about,
 .main__section2--colaborate {
